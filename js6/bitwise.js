@@ -18,4 +18,7 @@ if (!(n & (n-1))){
 }
 a = 5;
 b = 6;
-a = a 
+a = a ^ b;
+b = a ^ b;
+a = a ^ b;
+console.log(a, b);
