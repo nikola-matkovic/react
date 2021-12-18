@@ -14,7 +14,7 @@ if(m1.has(3)){                                  //has
 m1.forEach((val) => {                          //foreach
     console.log(val);
 });
-let s = m1.size;
+let s = m1.size;                               //size
 console.log("with iter:");
 const iter = m1.entries();
 for(let i=0; i<=s; i++){
