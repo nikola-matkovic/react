@@ -10,11 +10,11 @@ console.log(`${a} >>> ${b} = ${a >>> b}`);
 
 let n = 8
 if(n & 1)  
-    console.log("odd");
+  console.log("odd");
 else
-    console.log("even");
+  console.log("even");
 if (!(n & (n-1))){
-    console.log("number is  power of 2 ");
+  console.log("number is  power of 2 ");
 }
 a = 5;
 b = 6;
