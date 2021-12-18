@@ -17,4 +17,10 @@ if(lName.toLowerCase().startsWith("m")){
 }
 if(lName.toLowerCase().endsWith("ić")){
   console.log("Lname starts with ić: " + lName);
-}
+} 
+// math
+const PI = 3.14;
+console.log(Math.trunc(PI));          // 3
+console.log(Math.sign(PI));           // 1 //is positive, negativ or 0 // -1 0 1
+console.log(cbrt(64));                // cube root 
+// math.log2, math.log10, 
