@@ -23,4 +23,4 @@ const PI = 3.14;
 console.log(Math.trunc(PI));          // 3
 console.log(Math.sign(PI));           // 1 //is positive, negativ or 0 // -1 0 1
 console.log(cbrt(64));                // cube root 
-// math.log2, math.log10, 
+// math.log2, math.log10
