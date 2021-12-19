@@ -42,3 +42,11 @@ const part1 = [1, 2, 3, 4, 5];
 const part2 = [6, 7, 8, 9];
 const all = [0, ...part1, ...part2];
 console.log(all);
+
+const info =  {firsName : "nikola", lastName : "matkovic", age : 19};
+const moreInfo = {university : "DUNP", phone: "xiaomi"};
+const allInfo = {...info, ...moreInfo};
+
+for (let key in allInfo){
+  console.log(allInfo[key]);
+}
