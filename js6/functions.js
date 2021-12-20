@@ -57,3 +57,6 @@ const laptop2 = {
 laptop.turnOn.call(laptop1, 50, 90);
 laptop.turnOn.apply(laptop2, [12, 40]);
 
+console.log(Math.max.apply(null, [1, 2, 3]));
+const nums = [1, 2, 3];
+console.log(Math.max(...nums));
