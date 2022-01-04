@@ -33,16 +33,16 @@ let total2 = numbers.reduceRight((total, value) => {   //same, reduceRight -righ
 console.log(total2);
 
 if(ages.every( value => value >= 18 )){               //every
-  console.log("everyone is older then 18!")   
+  console.log("everyone is older than 18!")   
 }
 else{
-  console.log("Not all are older then 18!")
+  console.log("Not all are older than 18!")
 }
 if(ages.some( value => value >= 18 )){               //some
-  console.log("Someone is older then 18")   
+  console.log("Someone is older than 18")   
 }
 else{
-  console.log("No one is older then 18")
+  console.log("No one is older than 18")
 }
 console.log(numbers.indexOf(5));                    //indexof
 
