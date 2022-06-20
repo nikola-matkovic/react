@@ -19,6 +19,11 @@ const oldPage = (
 const page = (
     <nav>
         <h1>BEST REACT DEVELOPER</h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
     </nav>
 )
 
