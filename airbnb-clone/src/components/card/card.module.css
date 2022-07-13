@@ -1,0 +1,55 @@
+.card{
+    width: 350px;
+    font-family: 'Poppins';
+    margin: 30px;
+}
+.photo {
+    border-radius: 20px;
+    width: 100%;
+    height: 470px;
+    position: relative; 
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo span{
+    position: absolute;
+    background-color: white;
+    color: #222222;
+    height: 40px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    top: 20px;
+    left: 20px;
+    font-size: 22px;
+    border-radius: 5px;
+}
+.mark{
+    font-size: 24px;
+    font-weight: 300;
+}
+.number, .country{
+    color: #918E9B;
+    font-size: 24px;
+    margin: 0 10px;
+}
+.star{
+    width: 24px;
+    margin-right: 10px;
+}
+.card p{
+    font-weight: 300;
+}
+.card p, .card b, .card b+span{
+    font-size: 24px;
+    margin: 10px 0;
+}
+.country::before{
+    display: inline-block;
+    transform: translateX(-10px);
+    content: '•';
+}

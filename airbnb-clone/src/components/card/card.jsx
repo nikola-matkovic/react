@@ -12,13 +12,13 @@ export default function Card(){
                 <img src={img1} alt="" />
             </div>
             <div className="star-line">
-                <img src={star} alt="" />
+                <img className={style.star} src={star} alt="" />
                 <span className={style.mark}>5.0</span>
-                <span className={number}>(6)</span>
-                <span className={country}>USA</span>
+                <span className={style.number}>(6)</span>
+                <span className={style.country}>USA</span>
                 <p>Life lessons with Katie Zaferes</p>
                 <b>From $136</b>
-                <span>Person</span>
+                <span> / Person</span>
             </div>
         </div>
     )
