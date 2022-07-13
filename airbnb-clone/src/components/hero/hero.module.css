@@ -1,0 +1,18 @@
+.hero img {
+    display: block;
+    margin: 26px auto;
+}
+.title{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 36px;
+    padding-left: 36px;
+}
+.text{
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 1rem;
+    padding-left: 36px;
+    max-width: 350px;
+    margin: 20px 0;
+}
