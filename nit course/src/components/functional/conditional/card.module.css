@@ -1,0 +1,38 @@
+.card {
+    width: auto;
+    min-height: 200px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 12px;
+    display: flex;
+    background-color: gray; 
+    flex-direction: row;
+    color : white;
+    font-size: 2rem;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.text {
+    flex-grow: 1;
+    margin: 10px;
+
+}
+.info {
+    background-color: green;
+    color: black;
+}
+.danger {
+    background-color: rgba(255, 0, 0, 0.19);
+    color: red;
+}
+.warning {
+    background-color: rgba(255, 255, 0, 0.19); 
+    color: orange;
+}
+.subtititle {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
