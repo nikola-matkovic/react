@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     display: flex;
     justify-content: center;
@@ -14,4 +14,7 @@ body{
     background-color: #1A1B21;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+}
+a{
+    text-decoration: none;
 }

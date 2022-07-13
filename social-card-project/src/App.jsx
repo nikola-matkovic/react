@@ -9,6 +9,8 @@ function App() {
   return (
     <div className = {style.container}>
       <Info />
+      <About />
+      <Interests />
     </div>
   );
 }
