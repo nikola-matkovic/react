@@ -14,7 +14,12 @@ root.render(
     {/* <Conditional text="Ovo je neki tekst" />
     <Conditional text="Ovo je neki tekst"  type="warning" subtitle="subtitle"/ extraIcon = "test">
     <Conditional text="Ovo je neki tekst"  type="danger" /> */}
-    <Bagde name="instagram"/>
+    <Bagde type="tip1"/>
+    <Bagde type="tip2"/>
+    <Bagde type="tip3"/>
+    <Bagde type="tip4"/>
+    <Bagde type="tip5"/>
+    <Bagde />
   </React.StrictMode>
 );
 
