@@ -1,23 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap');
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Inter', sans-serif;
+
 }
 body{
   height: 100vh;  
   background-color: #23272c;
+  overflow: hidden;
 }
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 main{
   color: white;
+  position: relative;
+  flex-grow: 1;
 }
+
 header{
     display: flex;
     justify-content: space-between;
     align-items:center;
     padding: 10px;
+    max-height: 100px;
     background-color: #1e1e24;
     color: white;
+    flex: 1;
 }
 .left{
     display: flex;
@@ -25,20 +41,22 @@ header{
     align-items:center;
     color: rgb(119,206,233);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 .left img {
   width: 60px;
   aspect-ratio: 1;
 }
 .right{
-  font-weight: 500;
+  font-weight: 600;
+  color: #DEEBF8;
 }
 h1{
   margin-top: 75px;
   margin-bottom: 50px;
   margin-left: 50px;
   font-size: 3rem;
+  letter-spacing: -0.05em;
 }
 ul{
   margin-left: 100px;
@@ -53,4 +71,12 @@ ul li {
 ul li::marker{
   color: rgb(119,206,233);
   font-size: 1.6rem;
+}
+.big-logo{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 750px;
+  transform: translate(50%, -50%);
+  fill: rgb(81, 81, 81);
 }

@@ -1,5 +1,5 @@
 import React from "react"
-
+import ReactLogo from "../images/logo.jsx"
 export default function MainContent(){
     return(
       <main>
@@ -10,8 +10,8 @@ export default function MainContent(){
           <li>Has well over 100k stars on GitHub</li>
           <li>Is maintainded by facebook</li>
           <li>powers thousands of enterprise apps, including mobile apps</li>
-
         </ul>
+        <ReactLogo className="big-logo" />
       </main>
     )
 }
