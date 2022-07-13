@@ -9,11 +9,14 @@ body{
     justify-content: center;
     align-items:center;    
     min-height: 100vh;
+    background-color : #1c1c1c;
 }
 .container {
     background-color: #1A1B21;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-radius: 15px;
+    height: 770px;
+    position: relative;
+    overflow: hidden;
 }
 a{
     text-decoration: none;

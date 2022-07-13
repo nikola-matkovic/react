@@ -2,6 +2,8 @@
     width: 317px;
     font-family: 'Inter', sans-serif;
     padding: 0 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 .h3{
     color: #F5F5F5;
@@ -10,4 +12,5 @@
 p{
     color: #DCDCDC; 
     font-size: 13px; 
+    line-height: 1.1rem;
 }
