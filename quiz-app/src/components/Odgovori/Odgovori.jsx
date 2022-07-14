@@ -1,5 +1,7 @@
 import style from './odgovori.module.css'
 
+console.log(currentQuestion);
+
 let Odgovori = (props) => {
     return (
         <div className={style.container}>
