@@ -1,18 +1,18 @@
 import style from './pitanje.module.css'
-let photo = "img1.png"
+import photo from '../../files/1.png'
 
 let Pitanje = (props) => {
     return (
-        <div id="slika-kontejner">
-            <div id="tekst-iznad-slike">
+        <div id="slika-kontejner" className={style.slikaKontejner}>
+            <div id="tekst-iznad-slike" className={style.tekstIznadSlike}>
                 PITANJE
             </div>
-            <div id="pitanje">
-                <p id="tekst"></p>
-                <img src={photo} id="slika-pitanja"/>
-                <div id="linija" class="bg-primary"></div>
+            <div id="pitanje" className={style.pitanje}>
+                <p id="tekst">test</p>
+                <img src={photo} id="slika-pitanja" alt="image"/>
+                <div id="linija" className={`bg-primary ${style.linija}`}></div>
             </div>
-            <div id="broj-pitanja"><span id="trenutno"></span><span id="kosa">/</span><span id="ukupno"></span></div>
+            <div id="broj-pitanja" className={style.brojPitanja}><span id="trenutno"></span><span id="kosa">/</span><span id="ukupno"></span></div>
         </div>
     )
 }

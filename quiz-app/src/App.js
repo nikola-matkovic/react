@@ -5,6 +5,7 @@ import Audio from './components/Audio/Audio'
 import Kraj from './components/Kraj/Kraj'
 import Pitanje from './components/Pitanje/Pitanje'
 import Odgovori from './components/Odgovori/Odgovori'
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className={style.container}>

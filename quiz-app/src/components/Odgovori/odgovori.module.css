@@ -8,5 +8,7 @@
 }
 .btn{
     letter-spacing: 3px;
-    font-size: 1.3rem;
+    width: 80vw;
+    min-height: 100px;
+    font-size: 1.2rem;
 }
