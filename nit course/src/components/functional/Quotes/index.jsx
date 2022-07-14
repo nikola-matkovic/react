@@ -1,13 +1,13 @@
 import qoutes from  './qoutes.json'
-let filtered = qoutes.filter ( (qoute, index) => qoute.author.includes ('Michael Jordan'))    
+import style from './style.module.css';
 const Quotes = (props) => {
     return (
-        filtered.map(qoute => {
-            return  (<div>
-            <p>
-                {qoute.content} by: {qoute.author}
-            </p>)
-        </div>
+        qoutes.map(qoute => {
+            return  (<div className={style.card}>
+                <p className={style.qoute} > {qoute.content} </p>
+                <p className={style.author} > {qoute.author} </p>
+                
+            </div>
         )
         }
         )
