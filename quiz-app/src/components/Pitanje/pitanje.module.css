@@ -1,0 +1,48 @@
+.slika-kontejner{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tekst-iznad-slike{
+    font-size: 1.5rem;
+    color: white;
+    z-index: 3;
+    letter-spacing: 3px;
+    margin: 20px 0;
+}
+#pitanje{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    width: calc(100% - 2rem);
+    height: calc(40vh - 40px - 1.2rem);
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+#pitanje img{
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+}
+#pitanje p{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100% !important;
+    background-color:rgba(0, 0, 0, .4);
+    font-size: 1rem;
+    color:white;
+    z-index: 2;
+    line-height: 2rem;
+    font-size: 2rem;
+    margin: 1rem;
+    overflow-y: auto;
+    padding: 1rem;
+    letter-spacing: 2px;
+    justify-content:center;
+    align-items: center;
+}

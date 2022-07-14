@@ -1,4 +1,4 @@
-import style from 'audio.module.css'
+import style from './audio.module.css'
 
 const Audio = (props) => {
     return (

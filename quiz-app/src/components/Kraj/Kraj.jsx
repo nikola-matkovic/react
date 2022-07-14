@@ -1,4 +1,4 @@
-import style from 'kraj.module.css'
+import style from './kraj.module.css'
 
 const Kraj = (props) => {
     return (
