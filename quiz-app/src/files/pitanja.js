@@ -13,9 +13,9 @@ let pitanja = [
             {
                 tekst:  "Ništa jače od vode",
                 zvuk :  "",
+                correct: true
             },
         ],
-        tacan: [2],
     },
     {
         pitanje: "Da li pušite?",
@@ -27,13 +27,13 @@ let pitanja = [
             {
                 tekst:  "Ne, užasano smrdi",
                 zvuk : "", //kad se ljubiš s kamenajrkom
+                correct: true
             }, 
             {
                 tekst:  "Ovo pitanje mi je nejasno",
                 zvuk : "pod_mac.mp3", //ideš pod mač bato
             }, 
         ],
-        tacan:[1],
     },
     {
         pitanje: "Škola je ...",
@@ -45,13 +45,13 @@ let pitanja = [
             {
                 tekst: "Ateistička debilana",
                 zvuk : "debilana.mp3",
+                correct: true
             }, 
             {
                 tekst:  "Mesto za  druženje i igru",
                 zvuk : "",
             }, 
         ],
-        tacan:[1],
     },
     {
         pitanje: "Gde ćeš tražiti devojku?",
@@ -67,9 +67,9 @@ let pitanja = [
             {
                 tekst: "Pitaću nekog pametnijeg da mi preporuči",
                 zvuk : "",
+                correct: true
             }, 
         ],
-        tacan:[2],
     },
     {
         pitanje: "Koja je najpametnija knjiga ikada?",
@@ -77,6 +77,7 @@ let pitanja = [
             {
                 tekst: "Biblija",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "Gorski Vijenac",
@@ -87,7 +88,6 @@ let pitanja = [
                 zvuk : "",
             }, 
         ],
-        tacan: [0],
     },
     {
         pitanje: "Koja je najbolji auto?",
@@ -99,13 +99,13 @@ let pitanja = [
             {
                 tekst: "Konj",
                 zvuk : "konj.mp3",
+                correct: true
             }, 
             {
                 tekst: "Bmw, to devojke vole",
                 zvuk : "",//brm.mp3
             }, 
         ],
-        tacan:  [1],
     },
     {
         pitanje: "Šta radiš ukoliko ti kamenjarka piše poruke i poziva na sex?",
@@ -117,13 +117,14 @@ let pitanja = [
             {
                 tekst: "Blokiraš broj",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "Objasniš joj da niste jedno za drugo",
                 zvuk : "",
+                correct: true
             }, 
         ],
-        tacan: [1, 2],
     },
     {
         pitanje: "Koje ti je omiljeno piće?",
@@ -131,6 +132,7 @@ let pitanja = [
             {
                 tekst: "Voda",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "Kokakola",
@@ -139,9 +141,9 @@ let pitanja = [
             {
                 tekst: "Ceđena pomorandža",
                 zvuk : "",
+                correct: true
             }, 
         ],
-        tacan: [0, 2],
     },
     {
         pitanje: "Vegani su...",
@@ -157,9 +159,9 @@ let pitanja = [
             {
                 tekst: "Ljudi koji se hrane zdravo",
                 zvuk : "",
+                correct: true
             }, 
         ],
-        tacan: [2],
     },
     {
         pitanje: "Kada bi te devojka pozvala kući, šta bi uradio?",
@@ -171,13 +173,13 @@ let pitanja = [
             {
                 tekst: "Odbio bih",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "Znao bih šta hoće, otišao bih",
                 zvuk : "",
             }, 
         ],
-        tacan: [1],
     },
     {
         pitanje: "Da li znate šta je na slici?", //Marihuana
@@ -193,9 +195,9 @@ let pitanja = [
             {
                 tekst: "Prvi put vidim  u životu i definitivno  ne znam šta je",
                 zvuk : "",
+                correct: true
             }, 
         ],
-        tacan: [2],
     },
     {
         pitanje: "Japanci i kinezi su:",
@@ -203,17 +205,19 @@ let pitanja = [
             {
                 tekst: "Srbi",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "Albanci(dakle Iliri, dakle Srbi)",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "Potomci skenderbega (dakle Albanci, dakle Iliri, dakle Srbi)",
                 zvuk : "",
+                correct: true
             }, 
         ],
-        tacan: [0, 1, 2],
     },
     {
         pitanje: "Koji instrument bi voleli da svirate?",
@@ -225,13 +229,13 @@ let pitanja = [
             {
                 tekst: "Gusle, da budem vitez",
                 zvuk : "gusle.mp3",
+                correct: true
             }, 
             {
                 tekst: "Klavir",
                 zvuk : "",
             }, 
         ],
-        tacan: [1],
     },
     {
         pitanje: "Ko je najpametniji političar?",
@@ -239,17 +243,18 @@ let pitanja = [
             {
                 tekst: "Dritan Abazović",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "Abazović Dritan",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "Sveti velikomučenik AV",
                 zvuk : "",
             }, 
         ],
-        tacan: [0, 1],
     },
     {
         pitanje: "Da li ste za obaveznu va**inaciju?",
@@ -257,6 +262,7 @@ let pitanja = [
             {
                 tekst: "Ne, neka svako ima izbor",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "Da, va**ine su nam mnogo pomogle",
@@ -265,9 +271,9 @@ let pitanja = [
             {
                 tekst: "Ne",
                 zvuk : "",
+                correct: true
             }, 
         ],
-        tacan: [0,2],
     },
     {
         pitanje: "Dolazi nova godina i drugari te zovu kod njih na gajbu na proslavu i kažu biće i nekih riba, ti ćeš:",
@@ -283,9 +289,9 @@ let pitanja = [
             {
                 tekst: "Otići ću pod jorgan planinu i drugarima ću reći da nisam zainteresovan",
                 zvuk : "",
+                correct: true
             }, 
         ],
-        tacan: [2],
     },
     {
         pitanje: "Žena ti puni 9 meseci trudnoće i približava se porođaj, ti ćeš:",
@@ -301,9 +307,9 @@ let pitanja = [
             {
                 tekst: "Pozvaćeš pouzdanu babicu i ostati kući",
                 zvuk : "",
+                correct: true
             }, 
         ],
-        tacan: [2],
     },
     {
         pitanje: "Dete ti je napunilo 3 godine, šta ćeš da uradiš?",
@@ -315,13 +321,13 @@ let pitanja = [
             {
                 tekst: "Na  selu će se igrati sa životinjama  u prirodi",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "Upisaću ga na tenis, da bude novi Novak Đoković",
                 zvuk : "",
             }, 
         ],
-        tacan: [1],
     },
     {
         pitanje: "Čuo si da se blizu tebe održava kobasicijada ili nešto slično, šta ćeš da uradiš",
@@ -333,13 +339,13 @@ let pitanja = [
             {
                 tekst: "Ne jedem leševe mrtvih bolesnih životinja",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "Ne bih otišao jer je aktuelna pandemija",
                 zvuk : "",
             }, 
         ],
-        tacan: [1],
     },
     {
         pitanje: "Najbolji srpski pevač je ...?",
@@ -351,13 +357,13 @@ let pitanja = [
             {
                 tekst: "Milomir Miljanić",
                 zvuk : "",
+                correct: true
             }, 
             {
                 tekst: "MC stojan",
                 zvuk : "stojan.mp3",
             }, 
         ],
-        tacan: [1],
     },
 ]
 
