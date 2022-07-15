@@ -1,8 +1,7 @@
 import style from './pitanje.module.css'
-import { useState } from 'react';
 import pitanja from '../../files/pitanja'
-
 import React from 'react';
+
 function importAll(r) {
 	let images = [];
     r.keys().forEach((item) => { 
@@ -13,7 +12,7 @@ const r = require.context('../../files', false, /\.(png|jpe?g|svg)$/);
 const images = importAll(r);
 
 let Pitanje = (props) => {
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const {currentQuestion, setCurrentQuestion} = props
     return (
         <div id="slika-kontejner" className={style.slikaKontejner}>
             <div id="tekst-iznad-slike" className={style.tekstIznadSlike}>
