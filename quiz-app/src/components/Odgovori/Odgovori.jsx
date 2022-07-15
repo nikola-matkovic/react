@@ -1,13 +1,18 @@
 import style from './odgovori.module.css'
-
-console.log(currentQuestion);
+import pitanja from '../../files/pitanja'
 
 let Odgovori = (props) => {
+    let odgovori = pitanja[props.currentQuestion].odgovori;
+    let odgovoriJsx = odgovori.map((odgovor, index) => {
+        return   <button key={index} onClick={() => handleAnswerOptionClick()} className={`${style.btn} btn-primary`}>{odgovor.tekst}</button>
+    })
+    const {currentQuestion, setCurrentQuestion} = props
+    const  handleAnswerOptionClick = (tacno = false) => {
+        setCurrentQuestion(currentQuestion + 1);
+    }
     return (
         <div className={style.container}>
-            <button className={`${style.btn} btn-primary`}>Samo za slavu da bi očuvali stare običaje</button>
-            <button className={`${style.btn} btn-primary`}>Pomalo, rakija je dobra za imunitet</button>
-            <button className={`${style.btn} btn-primary`}>Ništa jače od vode</button>
+            {odgovoriJsx}
         </div>
     )
 }
