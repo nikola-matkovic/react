@@ -6,7 +6,9 @@ import ReactDOM from "react-dom/client";
 // import Conditional from "./components/functional/conditional";
 // import Bagde from "./components/functional/bagde";
 // import List from './components/functional/List/List'
-import Quotes from "./components/functional/Quotes"
+// import Quotes from "./components/functional/Quotes"
+// import TextInput from "./components/functional/textInput/";
+import SimpleForm from "./components/functional/simpleForm";
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -15,6 +17,6 @@ root.render(
     {/* <Conditional text="Ovo je neki tekst" />
     <Conditional text="Ovo je neki tekst"  type="warning" subtitle="subtitle"/ extraIcon = "test">
     <Conditional text="Ovo je neki tekst"  type="danger" /> */}
-    <Quotes />
+    <SimpleForm />
   </React.StrictMode>
 );

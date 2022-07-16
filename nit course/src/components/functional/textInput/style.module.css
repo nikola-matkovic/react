@@ -1,0 +1,17 @@
+.TextInput{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(242, 30, 30);
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.container {
+    position: relative;
+    padding: ;
+}
+.label{
+    top: -6px;
+    margin: 0;
+    position: absolute;
+}
