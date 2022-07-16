@@ -10,12 +10,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
+  const [showScore, setShowSchore] = useState(false)
   return (
     <div className={style.container}>
       <Audio currentQuestion={currentQuestion} pitanja = {pitanja} />
-      <Kraj />
+      <Kraj score={score} showScore={showScore} duzina={pitanja.length}/>
       <Pitanje currentQuestion={currentQuestion} />
-      <Odgovori currentQuestion={currentQuestion} setCurrentQuestion = {setCurrentQuestion} score={score} setScore={setScore} />
+      <Odgovori currentQuestion={currentQuestion} setCurrentQuestion = {setCurrentQuestion} score={score} setScore={setScore} showScore={showScore} setShowSchore={setShowSchore}  />
     </div>
   );
 }
