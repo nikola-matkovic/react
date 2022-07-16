@@ -12,9 +12,9 @@ function App() {
   const [score, setScore] = useState(0);
   return (
     <div className={style.container}>
-      <Audio />
+      <Audio currentQuestion={currentQuestion} pitanja = {pitanja} />
       <Kraj />
-      <Pitanje currentQuestion={currentQuestion} setCurrentQuestion = {setCurrentQuestion} />
+      <Pitanje currentQuestion={currentQuestion} />
       <Odgovori currentQuestion={currentQuestion} setCurrentQuestion = {setCurrentQuestion} score={score} setScore={setScore} />
     </div>
   );
