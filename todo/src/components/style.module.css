@@ -20,11 +20,19 @@ body{
 }
 .wrapper{
   background: #fff;
-  max-width: 400px;
   width: 100%;
+  max-width: 950px;
   padding: 25px;
   border-radius: 5px;
   box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  display: flex;
+  transition: all 5s;
+}
+.wrapper .right{
+  overflow: hidden;
+  padding: 0 20px;
+  padding-right: 0;
+  width: 450px;
 }
 .wrapper header{
   font-size: 30px;
@@ -108,10 +116,16 @@ body{
   color: #fff;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+}
+.todoList li .restore{
+  left: -45px;
 }
 .todoList li:hover .icon{
   right: 0px;
+}
+.todoList li:hover .restore{
+  left: 0px;
 }
 .wrapper .footer{
   display: flex;
