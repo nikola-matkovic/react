@@ -4,20 +4,22 @@ import img2 from '../../images/img2.png'
 import img3 from '../../images/img3.png'
 import star from '../../images/star.png'
 
-export default function Card(){
+export default function Card(props){
+    const images = [img1, img2, img3]
+    const {image, mark, number, country, title, price, status} = props;
     return(
         <div className = {style.card}>
             <div className={style.photo}>
-                <span>SOLD OUT</span>
-                <img src={img1} alt="" />
+                <span>{status}</span>
+                <img src={images[image]} alt="" />
             </div>
             <div className="star-line">
                 <img className={style.star} src={star} alt="" />
-                <span className={style.mark}>5.0</span>
-                <span className={style.number}>(6)</span>
-                <span className={style.country}>USA</span>
-                <p>Life lessons with Katie Zaferes</p>
-                <b>From $136</b>
+                <span className={style.mark}>{mark}</span>
+                <span className={style.number}>({number})</span>
+                <span className={style.country}>{country}</span>
+                <p>{title}</p>
+                <b>From {price}</b>
                 <span> / Person</span>
             </div>
         </div>
