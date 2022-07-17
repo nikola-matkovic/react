@@ -5,7 +5,7 @@ const Todo = () => {
     const handleInputChange = (e)  => {
         setValue(e.target.value);
     }
-
+    
     const addTask = (e) => {
         e.preventDefault();
         if (value) {
@@ -94,7 +94,7 @@ const Todo = () => {
                 <div>
                     <header>
                         <span>Todo App</span>
-                        <button style={{pointerEvents: `${finished.length ? "all": "none"}`}} type="button" className="btn btn-secondary" onClick={() => setShowFinished(!showFinished)}>Finished</button>
+                        <button style={{pointerEvents: `${(finished.length || showFinished) ? "all": "none"}`}} type="button" className="btn btn-secondary" onClick={() => setShowFinished(!showFinished)}>{ `${showFinished? "Close" : "Finished" }`}</button>
                     </header>
                     <div className={style.inputField}>
                         <input
