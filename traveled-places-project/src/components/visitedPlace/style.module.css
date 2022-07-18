@@ -1,0 +1,58 @@
+.VisitedPlaceContainer {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 40px;
+    padding-bottom: 0;
+}
+.VisitedPlaceContainer .image {
+    border-radius: 20px;
+    width: 250px;
+    height: 340px;
+}
+.VisitedPlaceContainer .image img{
+    object-fit: cover; 
+    width: 250px;
+    height: 340px;
+    border-radius: 20px;
+}
+.VisitedPlaceContainer .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    height:  100%;
+    padding: 20px 0;
+}
+.date {
+    font-weight: 700;
+    font-size: 16px;
+}
+.info h2 {
+    margin-bottom: 10px;
+}
+.info p {
+    font-size: 16px;
+}
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.location img{
+    width: 8px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.location .city{
+    font-weight: 300;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.location .mapLink {
+    color: gray;
+    font-size: 14px;
+}
