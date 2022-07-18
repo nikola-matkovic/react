@@ -17,10 +17,10 @@ function App() {
           image={card.image}
           mark={card.mark}
           number={card.number}
-          country={card.country} 
+          location={card.location} 
           title={card.title}
           price={card.price}
-          status={card.status}
+          openSpots={card.openSpots}
           />
       })}
       </section>

@@ -6,18 +6,26 @@ import star from '../../images/star.png'
 
 export default function Card(props){
     const images = [img1, img2, img3]
-    const {image, mark, number, country, title, price, status} = props;
+    const {image, mark, number, location, title, price, openSpots} = props;
+    let badgeText
+    if(openSpots === 0){
+        badgeText = 'SOLD OUT'
+    }
+    else if(location == 'ONLINE'){
+        badgeText = 'ONLINE'
+    }
+
     return(
         <div className = {style.card}>
             <div className={style.photo}>
-                {status && <span>{status}</span> }
+                {badgeText && <span>{badgeText}</span>} 
                 <img src={images[image]} alt="" />
             </div>
             <div className={style.starLine}>
                 <img className={style.star} src={star} alt="" />
                 <span className={style.mark}>{mark}</span>
                 <span className={style.number}>({number})</span>
-                <span className={style.country}>{country}</span>
+                <span className={style.country}>{location}</span>
             </div>
             <p>{title}</p>
             <b>From ${price}</b>

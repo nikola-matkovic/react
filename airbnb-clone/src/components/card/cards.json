@@ -1,5 +1,30 @@
 [
-    {"image":0,"mark":5,"number":6,"country":"USA","title":"Life lessons with Katie Zaferes","price":136,"status":"SOLD OUT"},
-    {"image":1,"mark":5,"number":30,"country":"USA","title":"Learn wedding photography","price":125,"status":"ONLINE"},
-    {"image":2,"mark":4.8,"number":2,"country":"USA","title":"Group Mountain Biking","price":50,"status":""}
+    {
+        "image":0,
+        "mark":5,
+        "number":6,
+        "location":"USA",
+        "title":"Life lessons with Katie Zaferes",
+        "price":136,
+        "openSpots": 0
+    },
+    {
+        "image":1,
+        "mark":5,
+        "number":30,
+        "location": "ONLINE",
+        "title":"Learn wedding photography",
+        "price":125,
+        "openSpots": 10
+    },
+    {
+        "image":2,
+        "mark":4.8,
+        "number":2,
+        "location":"USA",
+        "title":"Group Mountain Biking",
+        "price":50,
+        "openSpots": 20
+    
+    }
 ]
