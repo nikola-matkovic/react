@@ -53,3 +53,6 @@
     transform: translateX(-10px);
     content: '•';
 }
+.starLine{
+    margin-top: 15px;
+}

@@ -10,18 +10,18 @@ export default function Card(props){
     return(
         <div className = {style.card}>
             <div className={style.photo}>
-                <span>{status}</span>
+                {status && <span>{status}</span> }
                 <img src={images[image]} alt="" />
             </div>
-            <div className="star-line">
+            <div className={style.starLine}>
                 <img className={style.star} src={star} alt="" />
                 <span className={style.mark}>{mark}</span>
                 <span className={style.number}>({number})</span>
                 <span className={style.country}>{country}</span>
-                <p>{title}</p>
-                <b>From {price}</b>
-                <span> / Person</span>
             </div>
+            <p>{title}</p>
+            <b>From ${price}</b>
+            <span> / Person</span>
         </div>
     )
 }

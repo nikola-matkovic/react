@@ -8,30 +8,30 @@ function App() {
       <NavBar />
       <Hero />
       <Card 
-        image="0"
-        mark="5.0"
-        number="6" 
+        image={0}
+        mark={5.0}
+        number={6} 
         country="USA" 
         title="Life lessons with Katie Zaferes"
-        price="$136"
+        price={136}
         status="SOLD OUT"
       />
       <Card 
-        image="1"
-        mark="5.0"
-        number="30" 
+        image={1}
+        mark={5.0}
+        number={30} 
         country="USA" 
         title="Learn wedding photography"
-        price="$125"
+        price={125}
         status="ONLINE"
       />
       <Card
-        image="1"
-        mark="4.8"
-        number="2" 
+        image={2}
+        mark={4.8}
+        number={2}
         country="USA" 
         title="Group Mountain Biking"
-        price="$50"
+        price={50}
         status=""
       />
     </>
