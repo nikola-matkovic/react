@@ -1,7 +1,8 @@
-import './App.css';
+import './App.module.css';
+import Nav from './components/nav/Nav'
 function App() {
   return (
-    <p>test</p>
+    <Nav />
   );
 }
 
