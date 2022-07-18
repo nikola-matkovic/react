@@ -14,7 +14,6 @@ export default function Card(props){
     else if(location == 'ONLINE'){
         badgeText = 'ONLINE'
     }
-
     return(
         <div className = {style.card}>
             <div className={style.photo}>

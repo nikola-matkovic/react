@@ -14,13 +14,7 @@ function App() {
         cardsData.map((card, index) => {
           return <Card
           key = {index}
-          image={card.image}
-          mark={card.mark}
-          number={card.number}
-          location={card.location} 
-          title={card.title}
-          price={card.price}
-          openSpots={card.openSpots}
+          {...card}
           />
       })}
       </section>
