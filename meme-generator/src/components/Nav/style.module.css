@@ -1,0 +1,13 @@
+.nav{
+    background-image: linear-gradient(to right, #672280, #A626D3);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color: white;
+}
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 30px;
+}
