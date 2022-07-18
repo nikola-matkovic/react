@@ -1,39 +1,29 @@
-import './App.css';
 import NavBar from './components/NavBar/nav.jsx';
 import Hero from './components/hero/hero.jsx';
 import Card from './components/card/card'
-function App() {
+import cardsData from './components/card/cards.json';
+import style from './App.module.css';
+
+function App() { 
   return (
     <>
       <NavBar />
       <Hero />
-      <Card 
-        image={0}
-        mark={5.0}
-        number={6} 
-        country="USA" 
-        title="Life lessons with Katie Zaferes"
-        price={136}
-        status="SOLD OUT"
-      />
-      <Card 
-        image={1}
-        mark={5.0}
-        number={30} 
-        country="USA" 
-        title="Learn wedding photography"
-        price={125}
-        status="ONLINE"
-      />
-      <Card
-        image={2}
-        mark={4.8}
-        number={2}
-        country="USA" 
-        title="Group Mountain Biking"
-        price={50}
-        status=""
-      />
+      <section className={style.cardList}>
+      {
+        cardsData.map((card, index) => {
+          return <Card
+          key = {index}
+          image={card.image}
+          mark={card.mark}
+          number={card.number}
+          country={card.country} 
+          title={card.title}
+          price={card.price}
+          status={card.status}
+          />
+      })}
+      </section>
     </>
   );
 }
