@@ -3,10 +3,27 @@
     gap: 40px;
     align-items: flex-start;
     justify-content: flex-start;
-    overflow: hidden;
     padding: 40px;
     padding-bottom: 0;
+    height: auto;
 }
+.VisitedPlaceContainer:not(.VisitedPlaceContainer:last-of-type){
+    position: relative;
+}
+.VisitedPlaceContainer:not(.VisitedPlaceContainer:last-of-type)::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    height: 100%;
+    left: 5%;
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.VisitedPlaceContainer:not(.VisitedPlaceContainer:last-of-type){
+    padding-bottom: 45px;
+}
+
 .VisitedPlaceContainer .image {
     border-radius: 20px;
     width: 250px;
