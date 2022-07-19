@@ -1,0 +1,44 @@
+.memeContainer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.memeForm{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 30px;
+}
+.inputs input {
+    flex: 1;
+    border: 1px solid #c4c4c8;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px ;
+    outline: 0;
+    padding: 0 15px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.memeForm button, button:focus{
+    margin-top: 20px;
+    width: 100%;
+    background-image: linear-gradient(to right, #672280, #A626D3);
+    height: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border:0;
+    outline: 0;
+    cursor: pointer;
+}
