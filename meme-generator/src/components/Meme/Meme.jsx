@@ -6,10 +6,10 @@ const Meme = (props) => {
         <main className={style.memeContainer}>
             <form className={style.memeForm}>
                 <div className={style.inputs}>
-                    <input type="text" />
-                    <input type="text" />
+                    <input type="text" placeholder='top text'/>
+                    <input type="text" placeholder='bottom text'/>
                 </div>
-                <button type="submit">Get a new meme image</button>
+                <button type="submit">Get a new meme image 🖼️</button>
             </form>
         </main>
     )
