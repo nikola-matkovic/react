@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import TemperatureConverter from "./components/functional/TemperatureConverter/TemperatureConverter";
+import SearchMock from "./components/functional/SearchMock/index";
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode> 
-    <TemperatureConverter />
+    <SearchMock />
   </React.StrictMode>
 );
