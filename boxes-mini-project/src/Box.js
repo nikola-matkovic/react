@@ -5,7 +5,7 @@ const Box = (props) => {
     }
     return (
         <div className="box" style={style} 
-            onClick = {() => toggle(id) }
+            onClick={toggle}
         >
         </div>
     )

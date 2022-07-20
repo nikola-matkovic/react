@@ -7,9 +7,12 @@ export default function App() {
   const toggle = (id) => setSquares (prevSquares => prevSquares.map(square => square.id === id ? {...square, on : !square.on} : square))
   const [squares, setSquares] = useState(boxes)
   const squareElements = squares.map(square => (
-    <Box  on={square.on} toggle ={toggle} key={square.id} id={square.id} >
-
-    </Box>
+    <Box  
+      on={square.on} 
+      toggle={() => toggle(square.id)} 
+      key={square.id} 
+      id={square.id} 
+    />
   ))
   return (
     <main>
