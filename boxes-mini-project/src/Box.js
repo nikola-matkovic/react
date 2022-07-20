@@ -1,11 +1,19 @@
+import { useState } from "react"
+
 const Box = (props) => {
-    const  {on, switchFunction} = props;
+    const  [on, setOn] = useState(props.on)
     const style = {
         backgroundColor : on ? "#222" : "transparent",
     }
-    console.log(props);
+    const toggle = () => {
+        setOn (
+            prevOn => !prevOn
+        )
+    }
     return (
-        <div className="box" style={style} >
+        <div className="box" style={style} 
+            onClick = {toggle}
+        >
 
         </div>
     )
