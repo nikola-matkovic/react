@@ -1,0 +1,19 @@
+.btn{
+    width: 400px;
+    height: 50px;
+    border: 0;
+    outline: none;
+    color: white;
+}
+.primary{
+    background-color: #00bcd4;
+}
+.success{
+    background-color: #4caf50;
+}
+.danger{
+    background-color: #f44336;
+}
+.warning{
+    background-color: #ff9800;
+}
