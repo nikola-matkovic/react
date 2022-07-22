@@ -45,7 +45,29 @@
     cursor: pointer;
     font-family: 'Karla', sans-serif;
 }
-.memeContainer img {
+.meme {
     width: 80%;
     margin-top: 30px;
+    border: 1px solid #c4c4c8;
+    position: relative;
+}
+.meme img{
+    width: 100%;
+}
+.meme > div {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 1px 1px 3px  black;
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+.topText {
+    top: 5%;
+}
+.bottomText {
+    bottom: 5%;
 }

@@ -11,6 +11,10 @@ const Meme = (props) => {
         let url = memesData[randomNumber].url;
         setMeme( (prevState) =>({...prevState, url}));
     }
+    const handleChange = (e) => {
+        let {name, value} = e.target;
+        setMeme( (prevState) =>({...prevState, [name]: value}));
+    }
     return (
         <main className={style.memeContainer}>
             <form 
@@ -19,12 +23,16 @@ const Meme = (props) => {
             }}    
             >
                 <div className={style.inputs}>
-                    <input type="text" placeholder='top text'/>
-                    <input type="text" placeholder='bottom text'/>
+                    <input name ="topText" type="text" placeholder='top text' value={meme.topText} onChange={(e)=>handleChange(e)}/>
+                    <input name ="bottomText" type="text" placeholder='bottom text' value={meme.bottomText} onChange={(e)=>handleChange(e)}/>
                 </div>
                 <button type="submit" onClick={(e) => getMeme()}>Get a new meme image 🖼️</button>
             </form>
-            <img src={meme.url} alt="meme-image" />
+            <div className={style.meme}>
+                <div className={style.topText}>{meme.topText}</div>
+                <div className={style.bottomText}>{meme.bottomText}</div>
+                <img src={meme.url} alt="meme" />
+            </div>
         </main>
     )
 }
