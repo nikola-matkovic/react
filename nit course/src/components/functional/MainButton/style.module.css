@@ -17,3 +17,39 @@
 .warning{
     background-color: #ff9800;
 }
+.xs{
+    border-radius: 10px;
+}
+.sm{
+    border-radius: 20px;
+}
+.md{
+    border-radius: 30px;
+}
+.lg{
+    border-radius: 40px;
+}
+.xl{
+    border-radius: 50px;
+}
+
+.xssize{
+    transform: scale(0.75);
+    transform-origin: top left;
+}
+.smsize{
+    transform: scale(0.9);
+    transform-origin: top left;
+}
+.mdsize{
+    transform: scale(1);
+    transform-origin: top left;
+}
+.lgsize{
+    transform: scale(1.4);
+    transform-origin: top left;
+}
+.xlsize{
+    transform: scale(2);
+    transform-origin: top left;
+}
