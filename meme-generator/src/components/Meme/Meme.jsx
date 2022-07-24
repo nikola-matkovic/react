@@ -1,20 +1,34 @@
 import style from './style.module.css';
-import memes from './memes.json';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Meme = (props) => {
-    const [meme, setMeme] = useState({topText: "", bottomText: "", url: "https://i.imgflip.com/1tl71a.jpg"});
-    const [allMemeImages, setAllMemeImages] = useState(memes);
+    const [meme, setMeme] = useState({
+        topText: "",
+        bottomText: "", 
+        url: "https://i.imgflip.com/1tl71a.jpg"
+    });
+
+    const [allMemeImages, setAllMemeImages] = useState([]);
+
     const getMeme = () => {
-        let memesData = memes.data.memes;
-        let randomNumber = Math.floor(Math.random() * memesData.length);
-        let url = memesData[randomNumber].url;
+        let randomNumber = Math.floor(Math.random() * allMemeImages.length);
+        let url = allMemeImages[randomNumber].url;
         setMeme( (prevState) =>({...prevState, url}));
     }
+
     const handleChange = (e) => {
         let {name, value} = e.target;
         setMeme( (prevState) =>({...prevState, [name]: value}));
     }
+
+    useEffect( () => {
+        fetch("https://api.imgflip.com/get_memes")
+        .then( res => res.json())
+        .then(data => {
+           setAllMemeImages(data.data.memes);
+        }) 
+    },[])
+
     return (
         <main className={style.memeContainer}>
             <form 
