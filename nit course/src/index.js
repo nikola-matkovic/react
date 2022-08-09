@@ -12,6 +12,10 @@ root.render(
     <SimpleContext>
       <ContextConsumer>
       </ContextConsumer>
+      <ContextConsumer>
+      </ContextConsumer>
+      <ContextConsumer>
+      </ContextConsumer>
     </SimpleContext>
   // </React.StrictMode>
 );

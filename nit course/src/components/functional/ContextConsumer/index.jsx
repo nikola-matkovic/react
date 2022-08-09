@@ -2,8 +2,9 @@ import { useContext } from "react";
 import { MyContext } from "../SimpleContext";
 const ContextConsumer = (props) => {
     const context = useContext(MyContext);
-    <button onClick={()=> context.setText("jedan")}>podesi</button>
-    return <div>{context.text}</div>   
+    return <div>
+    <button onClick={()=> context.setCounter((old) => old + 1)}>+</button>    
+    {context.counter}</div>   
 }
 
 export default ContextConsumer;
