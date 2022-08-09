@@ -3,7 +3,7 @@ import { MyContext } from "../SimpleContext";
 const ContextConsumer = (props) => {
     const context = useContext(MyContext);
     return <div>
-    <button onClick={()=> context.setCounter((old) => old + 1)}>+</button>    
+    <button onClick={()=> context.setCounter((prew) => prew + 1)}>+</button>    
     {context.counter}</div>   
 }
 
