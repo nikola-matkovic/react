@@ -1,0 +1,26 @@
+.tabsContainer {
+  height: 50px;
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+
+  display: flex;
+  justify-items: center;
+}
+
+.tabItem {
+  min-width: 100px;
+  height: 100%;
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.tabItem.active {
+  color: rgb(0, 72, 255);
+  border-bottom: 2px solid rgb(0, 72, 255);
+}

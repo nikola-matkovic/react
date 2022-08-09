@@ -1,0 +1,40 @@
+.card {
+  width: auto;
+  min-height: 200px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 10px;
+
+  display: flex;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.text {
+  flex-grow: 1;
+  margin: 10px 20px;
+}
+
+.info {
+  background-color: green;
+  color: black;
+}
+
+.danger {
+  background-color: rgba(255, 0, 0, 0.19);
+  color: red;
+}
+
+.warning {
+  background-color: rgba(255, 251, 0, 0.267);
+  color: orange;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}

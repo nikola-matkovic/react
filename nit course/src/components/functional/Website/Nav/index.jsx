@@ -1,4 +1,4 @@
 const Nav = (props) => {
-    return <div>Nav</div>;
-  };
-  export default Nav;
+  return <div>Nav</div>;
+};
+export default Nav;
