@@ -1,26 +1,22 @@
-import { useEffect, useState } from "react";
+import { useCallback } from "react";
+import {  useState } from "react";
 
-const memorize = () => {
-    const [text, setText] = useState();
-    
+const Memorize = () => {
+    const [text, setText] = useState(0)
     return(
         <div>
-            <MyInput onChange={myCallback} />
-            <br />
-            <MyInput onChange={myCallback} />
-            <br />
-            <MyInput onChange={myCallback} />
-
+            <p>{text}</p>
+            <input
+            type="text" 
+            value={text}
+            onChange={(e)=> setText(e.target.value)
+            }
+            />
         </div>
     )
 }
-export default memorize;
 
-const MyInput = (props) => {
-    return (
-        <>
-            <label htmlFor="">My input</label>
-            <input type="text" />
-        </>
-    )
-}
+const filter
+
+
+export default Memorize;
