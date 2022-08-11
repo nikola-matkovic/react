@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Memorize from "../../Memorize";
+import Memorize from "./components/functional/Memorize";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
