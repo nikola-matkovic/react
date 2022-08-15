@@ -8,6 +8,7 @@ const StateHook = () => {
             <button onClick={()=> setCount(prevCount => prevCount + 1)}>
                 {count}
             </button>
+            <p>it works fine</p>        
         </div> 
     );
 }
