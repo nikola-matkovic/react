@@ -1,10 +1,10 @@
 import { useState } from "react";
-
+import Layout from "../Layout";
 const Home = () => {
     return (
-        <div>
+        <Layout>
             HOME
-        </div> 
+        </Layout> 
     );
 }
 

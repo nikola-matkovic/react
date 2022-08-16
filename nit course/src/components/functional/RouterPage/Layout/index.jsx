@@ -1,9 +1,9 @@
 import { useState } from "react";
-
+import Nav from "../Nav";
 const Layout = (props) => {
     return (
         <>
-            <p>Nav</p>
+            <Nav />
             {props.children}
             <p>footer</p>
         </> 
