@@ -5,7 +5,7 @@ import Layout from "../Layout";
 const About = () => {
     const navigate = useNavigate();
     const goToHome = () => {
-        navigate("/");
+        navigate("/", {state: {name: "suad"}});
     }
     return (
         <Layout>
