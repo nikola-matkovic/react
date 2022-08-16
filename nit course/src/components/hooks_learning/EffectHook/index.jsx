@@ -3,7 +3,7 @@ import { useState } from "react";
 const EffectHook = () => {
     return (
         <div>
-            test  EffectHook
+            EffectHook
         </div> 
     );
 }
