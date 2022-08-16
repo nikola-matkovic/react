@@ -1,11 +1,11 @@
-import { useState } from "react";
+import Layout from "../Layout";
 
 const Team = () => {
-    return (
-        <div>
-            Team
-        </div> 
-    );
-}
+  return (
+    <Layout>
+      <p>Team</p>
+    </Layout>
+  );
+};
 
 export default Team;

@@ -1,11 +1,11 @@
 import Layout from "../Layout";
 
-const Contacts = () => {
+const Page404 = () => {
   return (
     <Layout>
-      <p>Contacts</p>
+      <p>404</p>
     </Layout>
   );
 };
 
-export default Contacts;
+export default Page404;
