@@ -5,13 +5,15 @@ const About = () => {
   const navigation = useNavigate();
 
   const redirectHome = () => {
-    navigation("/", { state: { name: "suad" } });
+    navigation("/", { state: { name: "Nikola" } });
   };
 
   return (
     <Layout>
-      <p>About</p>
-      <button onClick={redirectHome}>Do something then go to home</button>
+      <h1>About</h1>
+      <p>
+
+      </p>
     </Layout>
   );
 };
