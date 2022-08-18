@@ -5,24 +5,21 @@ const Product = () => {
     const params = useParams();
     console.log(params);
     const products  = [
-        {naziv: "jabuka", kolicina: 154, boja: "zelena"},
-        {naziv: "banana", kolicina: 13, boja: "žuta"},
-        {naziv: "narandža", kolicina: 44, boja: "narandžasta"},
+        {id: 1, naziv: "jabuka", kolicina: 154, boja: "zelena"},
+        {id: 2, naziv: "banana", kolicina: 13, boja: "žuta"},
+        {id: 2, naziv: "narandža", kolicina: 44, boja: "narandžasta"},
     ]
-    let radi;
-    if (id > products.length){
-        radi = true;
-    }
+    products.filte
     return (
     <Layout>
-        greška == false && {
+        radi && {
                 <div>
                     <h1>{products[id].naziv}</h1>
                     <p>{products[id].kolicina}</p>
                     <p>{products[id].boja}</p>
                 </div>
         }
-        greška && <p>greška</p>
+        radi && <p>greška</p>
     </Layout>
   );
 };
