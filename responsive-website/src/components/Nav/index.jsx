@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
+import style from "./style.module.css";
 
 const Nav = () => {
     return (
-        <div>
-            Nav
-        </div> 
+        <nav className={style.nav}>
+            <Link   to="/"> Home </Link>
+            <Link  to="/About"> About </Link>
+            <Link  to="/Contacts"> Contacts </Link>
+            <Link  to="/Products"> Products </Link>
+        </nav> 
     );
 }
 

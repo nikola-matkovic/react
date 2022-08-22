@@ -1,8 +1,7 @@
-import { useState } from "react";
-
+import style from "./style.module.css";
 const Footer = () => {
     return (
-        <footer>
+        <footer className={style.Footer}>
             footer
         </footer> 
     );

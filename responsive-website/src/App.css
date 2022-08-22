@@ -5,3 +5,9 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
+body{
+  min-height: 100vh;
+}
+:root{
+  --footer-size: 2.5rem;
+}
