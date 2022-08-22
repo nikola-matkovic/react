@@ -1,18 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
 import "./index.css";
-import EffectHook from "./components/hooks_learning/EffectHook";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import RouterPage from "./components/functional/RouterPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-   <React.StrictMode>
-<<<<<<< HEAD
-      <EffectHook />
-=======
+  // <React.StrictMode>
+  <div>
     <BrowserRouter>
-      <RouterPage/>
+      <RouterPage />
     </BrowserRouter>
->>>>>>> d223305a6de59dab1a95ebdd734c5154bdfb9b7d
-  </React.StrictMode>
+  </div>
+  // </React.StrictMode>
 );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

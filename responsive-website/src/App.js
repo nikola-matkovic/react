@@ -1,9 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import reactRouter
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import RouterPage from './components/RouterPage';
 function App() {
   return (
-
+    <Routes>
+      <Route paht="/" elemen="test"></Route>
+      <Route paht="/" element={"about"}></Route>
+      <Route paht="/" element={"help"}></Route>
+    </Routes>
     );
 }
 
