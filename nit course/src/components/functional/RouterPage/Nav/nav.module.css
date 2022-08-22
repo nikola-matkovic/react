@@ -1,0 +1,15 @@
+.nav {
+  height: 80px;
+  background-color: yellow;
+
+  padding: 0 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navItem {
+  text-decoration: none;
+  margin: 10px 20px;
+}
