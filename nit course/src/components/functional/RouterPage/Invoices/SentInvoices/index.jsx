@@ -1,9 +1,5 @@
 const SentInvoices = () => {
-    return (
-        <div>
-            SentInvoices
-        </div> 
-    );
-}
+  return <div>sentInvoices</div>;
+};
 
 export default SentInvoices;
