@@ -6,8 +6,15 @@ interface Props {
     children: React.ReactNode
 }
 
-const SimpleComponent = (props: Props) => {
+interface Props2 extends Props {
+    addres: string
+}
+
+type props3 <T = unknown> = T & {surname: string}
+
+const SimpleComponent = (props: React.PropsWithChildren<Props>) => {
     const {name, age} = props;
+    const a : props3 <> = {}
     return (
         <div>
             {name && <p>{(name  as number)}</p>}
