@@ -12,9 +12,13 @@ interface Props2 extends Props {
 
 type props3 <T = unknown> = T & {surname: string}
 
+
+const f = (age: number, time: number) : number => {
+    return 1;
+}
+
 const SimpleComponent = (props: React.PropsWithChildren<Props>) => {
     const {name, age} = props;
-    const a : props3 <> = {}
     return (
         <div>
             {name && <p>{(name  as number)}</p>}
