@@ -33,6 +33,48 @@ function App() {
                 id="Multiplier"
             />
             <Rectangle header="Control test" id="control" />
+            <ArrowComponent
+                direction="down"
+                length={70}
+                headLength={25}
+                headWidth={10}
+                id="arrow2"
+            />
+            <ArrowComponent
+                direction="down"
+                length={75}
+                headLength={25}
+                headWidth={10}
+                id="arrow3"
+            />
+            <ArrowComponent
+                direction="right"
+                length={100}
+                headLength={25}
+                headWidth={10}
+                id="arrow4"
+            />
+            <ArrowComponent
+                direction="left"
+                length={260}
+                headLength={25}
+                headWidth={10}
+                id="arrow5"
+            />
+            <ArrowComponent
+                direction="up"
+                length={380}
+                headLength={0}
+                headWidth={10}
+                id="arrow6"
+            />
+            <ArrowComponent
+                direction="left"
+                length={120}
+                headLength={25}
+                headWidth={10}
+                id="arrow7"
+            />
         </>
     );
 }
