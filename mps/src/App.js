@@ -19,6 +19,13 @@ function App() {
                 value="000 000 111 111"
                 id="mltiplican"
             />
+            <PolylineComponent />
+            <Rectangle
+                header="Product"
+                small="White"
+                value="000 000 111 111"
+                id="product"
+            />
         </>
     );
 }

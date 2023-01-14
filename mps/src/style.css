@@ -22,7 +22,7 @@ polyline,
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 400px;
     height: 155px;
 }
 
@@ -48,12 +48,34 @@ polyline,
 
 #mltiplican {
     left: 50%;
-    top: 100px;
+    top: 50px;
     transform: translateX(-50%);
 }
 
 #arrow1 {
     left: 50%;
-    top: 70px;
+    top: 20px;
+    transform: translateX(-50%);
+}
+.polyline {
+    position: absolute;
+    top: 300px;
+    left: 15%;
+    transform: scale(1.5);
+    transform-origin: top left;
+}
+.text1 {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+.text2 {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+#product {
+    top: 550px;
+    left: 30%;
     transform: translateX(-50%);
 }

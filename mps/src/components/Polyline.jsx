@@ -4,11 +4,17 @@ const PolylineComponent = () => {
     return (
         <div className="polyline">
             <Polyline
-                points="0,0 50,0 75,20 100,0 150,0 120,60 30,60, 0,0"
+                points="0,0 120,0 150,25 180,0 300,0 240,100 60,100, 0,0"
                 fill={{ color: "white" }}
                 stroke={{ color: "black" }}
-                strokeWidth={1}
+                strokeWidth={2}
             />
+            <div className="text1">
+                <p>1</p>
+            </div>
+            <div className="text2">
+                <p>2</p>
+            </div>
         </div>
     );
 };
