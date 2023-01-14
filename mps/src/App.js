@@ -26,6 +26,13 @@ function App() {
                 value="000 000 111 111"
                 id="product"
             />
+            <Rectangle
+                header="Multiplier"
+                small="Shift right"
+                value="000 000"
+                id="Multiplier"
+            />
+            <Rectangle header="Control test" id="control" />
         </>
     );
 }
