@@ -8,15 +8,20 @@ function App() {
     const [MultiplierValue, setMultiplierValue] = useState("001 010");
     const [ProductValue, setProductValue] = useState("000 000 000 000");
     const [MultiplicanValue, setMultiplicanValue] = useState("000 000 110 010");
+    const [first, setFirst] = useState(false);
     const [alu1, setAlu1] = useState("");
     const [alu2, setAlu2] = useState("");
-    const [showText, setShowText] = useState(true);
-
+    const [start, setStart] = useState(false);
+    const [zadnjaCifra, setZadnjaCifra] = useState("");
     useEffect(() => {
-        const timeOut = setTimeout(() => {
-            setShowText(false);
+        setZadnjaCifra(MultiplierValue[MultiplierValue.length - 1]);
+
+        let startTimeOut = setTimeout(() => {
+            setStart(true);
         }, 3000);
-        return () => clearInterval(timeOut);
+        return () => {
+            clearTimeout(startTimeOut);
+        };
     }, []);
 
     return (
@@ -33,7 +38,8 @@ function App() {
                 small="Shift left"
                 value={MultiplicanValue}
                 id="mltiplican"
-                className="last"
+                redFirst={start}
+                blue={start}
             />
             <PolylineComponent alu1={alu1} alu2={alu2} />
             <Rectangle
@@ -47,6 +53,7 @@ function App() {
                 small="Shift right"
                 value={MultiplierValue}
                 id="Multiplier"
+                redlast={start}
             />
             <Rectangle header="Control test" id="control" />
             <ArrowComponent
@@ -105,7 +112,7 @@ function App() {
                 headWidth={10}
                 id="arrow9"
             />
-            {showText && <div id="tekst">tekst</div>}
+            {start && <div id="tekst">Multiplier = {zadnjaCifra} ? </div>}
         </>
     );
 }
