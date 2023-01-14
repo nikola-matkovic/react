@@ -2,7 +2,7 @@ import ArrowComponent from "./components/Arrow";
 import PolylineComponent from "./components/Polyline";
 import Rectangle from "./components/Rectangle";
 import style from "./style.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
     const [MultiplierValue, setMultiplierValue] = useState("001 010");
@@ -10,6 +10,14 @@ function App() {
     const [MultiplicanValue, setMultiplicanValue] = useState("000 000 110 010");
     const [alu1, setAlu1] = useState("");
     const [alu2, setAlu2] = useState("");
+    const [showText, setShowText] = useState(true);
+
+    useEffect(() => {
+        const timeOut = setTimeout(() => {
+            setShowText(false);
+        }, 3000);
+        return () => clearInterval(timeOut);
+    }, []);
 
     return (
         <>
@@ -96,6 +104,7 @@ function App() {
                 headWidth={10}
                 id="arrow9"
             />
+            {showText && <div id="tekst">tekst</div>}
         </>
     );
 }
