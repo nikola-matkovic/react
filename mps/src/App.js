@@ -29,10 +29,11 @@ function App() {
                 id="arrow1"
             />
             <Rectangle
-                header="Multiplican"
+                header="Multiplicand"
                 small="Shift left"
                 value={MultiplicanValue}
                 id="mltiplican"
+                className="last"
             />
             <PolylineComponent alu1={alu1} alu2={alu2} />
             <Rectangle
