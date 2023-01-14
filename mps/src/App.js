@@ -2,8 +2,15 @@ import ArrowComponent from "./components/Arrow";
 import PolylineComponent from "./components/Polyline";
 import Rectangle from "./components/Rectangle";
 import style from "./style.css";
+import { useState } from "react";
 
 function App() {
+    const [MultiplierValue, setMultiplierValue] = useState("001 010");
+    const [ProductValue, setProductValue] = useState("000 000 000 000");
+    const [MultiplicanValue, setMultiplicanValue] = useState("000 000 110 010");
+    const [alu1, setAlu1] = useState("");
+    const [alu2, setAlu2] = useState("");
+
     return (
         <>
             <ArrowComponent
@@ -16,20 +23,20 @@ function App() {
             <Rectangle
                 header="Multiplican"
                 small="Shift left"
-                value="000 000 111 111"
+                value={MultiplicanValue}
                 id="mltiplican"
             />
-            <PolylineComponent />
+            <PolylineComponent alu1={alu1} alu2={alu2} />
             <Rectangle
                 header="Product"
                 small="White"
-                value="000 000 111 111"
+                value={ProductValue}
                 id="product"
             />
             <Rectangle
                 header="Multiplier"
                 small="Shift right"
-                value="000 000"
+                value={MultiplierValue}
                 id="Multiplier"
             />
             <Rectangle header="Control test" id="control" />

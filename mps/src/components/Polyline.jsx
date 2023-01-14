@@ -1,6 +1,7 @@
 import { Polyline } from "react-shapes";
 
-const PolylineComponent = () => {
+const PolylineComponent = (props) => {
+    let { alu1, alu2 } = props;
     return (
         <div className="polyline">
             <Polyline
@@ -10,10 +11,10 @@ const PolylineComponent = () => {
                 strokeWidth={2}
             />
             <div className="text1">
-                <p>1</p>
+                <p>{alu1}</p>
             </div>
             <div className="text2">
-                <p>2</p>
+                <p>{alu2}</p>
             </div>
         </div>
     );
