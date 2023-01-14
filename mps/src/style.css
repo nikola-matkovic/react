@@ -51,3 +51,9 @@ polyline,
     top: 100px;
     transform: translateX(-50%);
 }
+
+#arrow1 {
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+}

@@ -6,13 +6,13 @@ import style from "./style.css";
 function App() {
     return (
         <>
-            {/* <ArrowComponent
-                direction="down"
-                length={50}
-                headLength={10}
-                headWidth={5}
+            <ArrowComponent
+                direction="left"
+                length={100}
+                headLength={25}
+                headWidth={10}
+                id="arrow1"
             />
-            <PolylineComponent /> */}
             <Rectangle
                 header="Multiplican"
                 small="Shift left"
