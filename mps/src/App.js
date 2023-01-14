@@ -75,6 +75,20 @@ function App() {
                 headWidth={10}
                 id="arrow7"
             />
+            <ArrowComponent
+                direction="up"
+                length={220}
+                headLength={0}
+                headWidth={10}
+                id="arrow8"
+            />
+            <ArrowComponent
+                direction="left"
+                length={350}
+                headLength={25}
+                headWidth={10}
+                id="arrow9"
+            />
         </>
     );
 }
