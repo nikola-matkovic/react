@@ -2,7 +2,7 @@ import { Polyline } from "react-shapes";
 
 const PolylineComponent = () => {
     return (
-        <div>
+        <div className="polyline">
             <Polyline
                 points="0,0 50,0 75,20 100,0 150,0 120,60 30,60, 0,0"
                 fill={{ color: "white" }}
